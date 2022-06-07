@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+html,
+body {
+    padding: 0;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main_div {
+    width: 100vw;
+    margin: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* SECTION ONE CSS */
+
+.section_One {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #110E13 54.76%), radial-gradient(80.83% 187.21% at 91.98% 23.36%, #581F66 0%, #100C12 14.97%, #222222 73.22%, rgba(97, 32, 111, 0) 100%), radial-gradient(86.51% 200.34% at 6.81% 24.36%, #601F6C 0%, #1E1125 31%, #170F1D 58.26%, #120F14 90.36%);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.navbar {
+    width: 80vw;
+    position: absolute;
+    height: 80px;
+    left: 10vw;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_navlist {
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.navbar_navlist_list {
+    text-decoration: none;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar_logo {
+    margin-left: 10px;
+    width: 60px;
+    height: 80%;
+    position: relative;
+}
+
+.connect_walet {
+    border-radius: 100px;
+    border: 1px solid white;
+    transition-duration: 0.6s;
+}
+
+.connect_walet:hover {
+    font-size: 1.05rem;
+}
+
+.navbar_navlist_list:hover {
+    transition-duration: 0.6s;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+
+
+/* Hero Section  */
+
+.hero_section {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-end: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_section p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.8rem;
+    letter-spacing: 0.02em;
+    margin: 5px;
+}
+
+.hero_title {
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.hero_desc {
+    width: 80%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.hero_btns {
+    width: 80%;
+    margin: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 50px;
+    width: 40%;
+    overflow: hidden;
+    border-radius: 120px;
+    transition-duration: 0.3s;
+}
+
+.learn_more {
+    border: 1px solid white;
+}
+
+.learn_more button {
+    background: none;
+    border-radius: 126px;
+    border: none;
+    height: 100%;
+    color: white;
+    width: 100%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.learn_more button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.get_started button {
+    background: linear-gradient(93.16deg, rgba(0, 19, 124, 0.381) 30.22%, rgba(0, 26, 176, 0.408) 83.72%);
+    border-radius: 126px;
+    border: none;
+    height: 100%;
+    color: white;
+    width: 100%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.get_started button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.hero_img {
+    grid-row-start: 3;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-end: 8;
+}
+
+
+/* SECTION TWO CSS */
+
+.section_two {
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(201.47deg, #110E13 37.4%, rgba(17, 14, 19, 0) 50.57%, #110E13 66.4%), radial-gradient(29.32% 48.17% at 0% 35.57%, #601F6C 16.79%, rgba(17, 14, 19, 0) 58.65%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(45.19% 91.32% at 97.23% 82.09%, #601F6C 11.55%, #110E13 31.89%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 200px;
+}
+
+
+/* SECTION TWO COMPONENT ONE */
+
+.glass_container {
+    top: -40px;
+    width: 80vw;
+    background: rgba(60, 57, 62, 0.28);
+    border-radius: 64px;
+    height: 280px;
+    left: 10vw;
+    right: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass_container_main {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.art_work_details {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.art {
+    font-size: 1.4rem;
+}
+
+.artCount {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.art_work_detail {
+    margin: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 2;
+}
+
+.art_work {
+    font-size: 1.4rem;
+}
+
+.art_work_bold {
+    margin-left: 10px;
+    font-size: 2.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.circles_div {
+    display: flex;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    height: 95px;
+}
+
+.circle {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background: linear-gradient(266.46deg, #491A52 40.68%, #161417 85.42%);
+    position: absolute;
+    border: 0.2px solid white;
+}
+
+.circle_one {
+    right: 0;
+    bottom: 0;
+}
+
+.circle_two {
+    right: 60px;
+    bottom: 0;
+}
+
+.circle_three {
+    right: 120px;
+    bottom: 0;
+}
+
+.circle_four {
+    right: 180px;
+    bottom: 0;
+}
+
+.circle_five {
+    right: 240px;
+    bottom: 0;
+}
+
+
+/* SECTION TWO COMPONENT TWO */
+
+.secTwo_hero_section {
+    width: 80vw;
+    height: fit-content;
+    left: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secTwo_hero_imgs {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secTwo_imgbox1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.secTwo_imgbox2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.secTwo_img {
+    width: 280px;
+    height: 200px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 57px;
+    margin: 20px;
+}
+
+.sectwo_hero_content {
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectwo_hero_content_pp {
+    color: green;
+    font-size: 0.8rem;
+}
+
+.sectwo_hero_content_title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.02em;
+    margin: 5px;
+}
+
+.sectwo_hero_desc {
+    width: 80%;
+    text-align: start;
+    font-size: 0.8rem;
+}
+
+.sectwo_hero_btn {
+    height: 50px;
+    margin-top: 20px;
+    width: 140px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 120px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+.sectwo_hero_btn button {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.3s;
+    color: white;
+    cursor: pointer;
+}
+
+.sectwo_hero_btn>button:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+
+/* SECTION THREE CSS */
+
+.sectionThree {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(45.99% 64.4% at 95.99% 35.02%, #61206F 0%, #110E13 36.07%, rgba(17, 14, 19, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(32.01% 78.66% at 3.49% 57.95%, #61206F 19.7%, #110E13 54.91%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.secThree_hero_container {
+    height: 80%;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+
+.secThree_hero_text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secThree_artist {
+    color: green;
+    font-size: 1.2rem;
+}
+
+.secThree_hero_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.secThree_hero_title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.02em;
+    margin: 5px;
+}
+
+.secThree_hero_desc {
+    text-align: start;
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.secThree_hero_img {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secThree_hero_imgbox1 {
+    width: 320px;
+    height: 310px;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.secThree_hero_imgbox2 {
+    width: 320px;
+    height: 310px;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.secThree_brands_container {
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    width: 70%;
+    margin: auto;
+}
+
+.secThree_brand_name {
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+}
+
+
+/* FOOTER SECTION */
+
+.footer_section {
+    background: linear-gradient(180deg, #110E13 56.9%, rgba(17, 14, 19, 0) 100%), radial-gradient(83.02% 110.49% at 91.36% 89.38%, #581F66 3.43%, #100C12 17.52%, #222222 80.91%, rgba(0, 0, 0, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    , radial-gradient(77.57% 179.66% at 11.99% 87.55%, #601F6C 23.92%, #1E1125 34.05%, rgba(18, 10, 22, 0.31) 76.71%, rgba(0, 0, 0, 0) 100%)/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    padding: 30px;
+}
+
+.footer_heroSec {
+    width: 80vw;
+    height: 50%;
+    margin: auto;
+}
+
+.footer_title {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.4rem;
+    letter-spacing: 0.02em;
+    margin: 5px;
+}
+
+.footer_subscribe_btn {
+    height: 60px;
+    width: 200px;
+    border-radius: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.footer_subscribe_btn button {
+    background: linear-gradient(93.16deg, rgba(0, 19, 124, 0.381) 30.22%, rgba(0, 26, 176, 0.408) 83.72%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.footer_subscribe_btn button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.footer_container {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 35%;
+}
+
+.footer_logo {
+    width: 60px;
+    position: relative;
+    height: 60px;
+}
+
+.footer_content_one {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+}
+
+.footer_list {
+    list-style: none;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer_list li {
+    text-align: left;
+    margin: 8px 0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1050px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+    .glass_container {
+        height: 250px;
+    }
+    .secThree_hero_imgbox1 {
+        width: 320px;
+        height: 320px;
+        border: 3px solid rgb(158, 22, 22);
+        border-radius: 50px;
+    }
+    .secThree_hero_imgbox2 {
+        width: 320px;
+        height: 320px;
+        border: 3px solid white;
+        border-radius: 50px;
+    }
+}
